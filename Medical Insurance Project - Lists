@@ -17,11 +17,18 @@ print("Here is the first medical record: "+ str(first_medical_record))
 medical_records.sort()
 print("Here are the medical records sorted by insurance cost: " + str(medical_records))
 
-cheapest_insurance_costs = medical_records[-3:]
+cheapest_insurance_costs = medical_records[0:3]
 print("Here are the three cheapest insurance costs in our medical records: " + str(cheapest_insurance_costs))
 
-priciest_three = medical_records[0:3]
+priciest_three = medical_records[-3:]
 print("Here are the three most expensive insurance costs in our medical records: " + str(priciest_three))
 
 occurrences_Paul = names.count("Paul")
 print("There are " + str(occurrences_Paul) + " individuals with the name Paul in our medical records.")
+
+medical_records_alpha = list(zip(names, insurance_costs))
+medical_records_alpha.sort()
+print(medical_records_alpha)
+
+middle_five_records = medical_records_alpha[3:8]
+print(middle_five_records)
