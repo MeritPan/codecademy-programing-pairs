@@ -1,0 +1,22 @@
+#Frida Kahlo Exhibition - MeritPan
+#Task 1
+painting = ["The Two Fridas", "My Dress Hangs Here", "Tree of Hope", "Self Portrait With Monkeys"]
+#Task 2
+dates = [1939, 1933, 1946, 1940]
+#Task 3
+paintings = list(zip(painting, dates))
+print(paintings)
+#Task4
+paintings.append(('The Broken Column', 1944))
+paintings.append(('The Wounded Deer', 1946))
+paintings.append(('Me and My Doll', 1937))
+print(paintings)
+#Task 5
+print(len(paintings))
+#Task 6
+audio_tour_number = list(range(1, 8))
+print (audio_tour_number)
+#Task 7
+master_list = list(zip(paintings, audio_tour_number))
+#Task 8
+print(master_list)
