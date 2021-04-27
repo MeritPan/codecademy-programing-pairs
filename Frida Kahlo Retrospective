@@ -5,13 +5,13 @@ paintings = list(zip(paintings, dates))
 
 print(paintings)
 
-paintings.extend(['The Broken Column', 1944])
-paintings.extend(['The Wounded Deer', 1946])
-paintings.extend(['Me and My Doll', 1937])
+paintings.append((['The Broken Column', 1944]))
+paintings.append((['The Wounded Deer', 1946]))
+paintings.append((['Me and My Doll', 1937]))
 
 print(len(paintings))
 
-audio_tour_number = list(range(1, 11))
+audio_tour_number = list(range(1, 8))
 
 master_list = list(zip(audio_tour_number, paintings))
 
